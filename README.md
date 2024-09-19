@@ -1,5 +1,7 @@
 # CashFlowApp
 
+The application can be accessed via [this link](http://cash-flow-app-test.s3-website-us-east-1.amazonaws.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
 ## Development server
