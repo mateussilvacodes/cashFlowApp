@@ -1,0 +1,239 @@
+.transactions {
+    width: 100%;
+    box-sizing: border-box;
+    list-style-type: none;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0px;
+  }
+
+  .transactions li {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+  .transactions > li > div, .transaction-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+
+  .transaction-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color: #ddd;
+  }
+
+  .content {
+    width: 85%;
+  }
+
+  .add-transaction-mobile button {
+    display: none;
+  }
+
+  .actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100px;
+    height: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 0;
+  }
+
+  .actions button {
+    width: 50%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+  }
+
+  .swipe-active .content {
+    transform: translateX(-25%);
+  }
+
+.add-transaction-mobile {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15%;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(to top, #fff, transparent);
+  }
+
+  .add-transaction-mobile button {
+    background-color: #000;
+    border-radius: 10px;
+    width: 80%;
+    height: 60px;
+    color: #fff;
+  }
+
+.add-transaction-overlay {
+    opacity: 0;
+    transition: transform 0.2s ease-in;
+  }
+
+  .bottom-sheet {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    padding: 40px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0px 20px 20px 20px #0000003c;
+    transform: translateY(100%);
+  }
+
+  .add-transaction-desktop button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0px 60px;
+  }
+
+  input, select {
+    margin: 20px 10px 10px 0;
+    height: 50px;
+    width: 25%;
+    padding-left: 15px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .bottom-sheet button {
+    position: absolute;
+    height: 50px;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .close-button {
+    bottom: 10% !important;
+    background-color: #ddd !important;
+    color: #000 !important;
+  }
+
+  .add-transaction-overlay.active {
+    opacity: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    left: 0;
+    top: 0;
+    transition: transform 0.7s ease-in;
+  }
+
+  .bottom-sheet.active {
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+
+  .bottom-sheet.hide {
+    animation: slideDown 0.5s ease-in-out forwards;
+  }
+
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .add-transaction-desktop {
+        display: none;
+    }
+
+    input, select {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+    }
+
+    .add-transaction-mobile button {
+        display: block;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: 100px;
+        height: 100%;
+        justify-content: space-between;
+        background-color: #fff;
+        z-index: 0;
+      }
+
+      .actions button {
+        width: 50%;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+  }

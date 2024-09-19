@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px 0px 20px;
+    overflow-x: hidden;
+  }
+
+  .monthSelector {
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    transform: translateX(50%);
+  }

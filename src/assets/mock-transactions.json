@@ -1,0 +1,317 @@
+[
+    {
+        "id": 1726761309931,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-01-05"
+    },
+    {
+        "id": 1726761309932,
+        "description": "Compra supermercado",
+        "type": "saida",
+        "amount": 150,
+        "date": "2024-01-10"
+    },
+    {
+        "id": 1726761309933,
+        "description": "Venda de item usado",
+        "type": "entrada",
+        "amount": 200,
+        "date": "2024-01-15"
+    },
+    {
+        "id": 1726761309934,
+        "description": "Aluguel",
+        "type": "saida",
+        "amount": 1200,
+        "date": "2024-01-20"
+    },
+    {
+        "id": 1726761309935,
+        "description": "Conta de energia",
+        "type": "saida",
+        "amount": 80,
+        "date": "2024-01-25"
+    },
+    {
+        "id": 1726761326139,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-02-05"
+    },
+    {
+        "id": 1726761326140,
+        "description": "Compra de roupas",
+        "type": "saida",
+        "amount": 250,
+        "date": "2024-02-07"
+    },
+    {
+        "id": 1726761326141,
+        "description": "Jantar fora",
+        "type": "saida",
+        "amount": 75,
+        "date": "2024-02-14"
+    },
+    {
+        "id": 1726761326142,
+        "description": "Freelance",
+        "type": "entrada",
+        "amount": 600,
+        "date": "2024-02-25"
+    },
+    {
+        "id": 1726761326143,
+        "description": "Assinatura de streaming",
+        "type": "saida",
+        "amount": 20,
+        "date": "2024-02-28"
+    },
+    {
+        "id": 1726761326144,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-03-05"
+    },
+    {
+        "id": 1726761326145,
+        "description": "Compra mercado",
+        "type": "saida",
+        "amount": 200,
+        "date": "2024-03-10"
+    },
+    {
+        "id": 1726761326146,
+        "description": "Cinema",
+        "type": "saida",
+        "amount": 50,
+        "date": "2024-03-15"
+    },
+    {
+        "id": 1726761326147,
+        "description": "Renda extra",
+        "type": "entrada",
+        "amount": 300,
+        "date": "2024-03-20"
+    },
+    {
+        "id": 1726761326148,
+        "description": "Curso online",
+        "type": "saida",
+        "amount": 150,
+        "date": "2024-03-25"
+    },
+    {
+        "id": 1726761326149,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-04-05"
+    },
+    {
+        "id": 1726761326150,
+        "description": "Compra no shopping",
+        "type": "saida",
+        "amount": 500,
+        "date": "2024-04-10"
+    },
+    {
+        "id": 1726761326151,
+        "description": "Aluguel",
+        "type": "saida",
+        "amount": 1200,
+        "date": "2024-04-20"
+    },
+    {
+        "id": 1726761326152,
+        "description": "Venda de artesanato",
+        "type": "entrada",
+        "amount": 150,
+        "date": "2024-04-25"
+    },
+    {
+        "id": 1726761326153,
+        "description": "Conserto de carro",
+        "type": "saida",
+        "amount": 300,
+        "date": "2024-04-30"
+    },
+    {
+        "id": 1726761326154,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-05-05"
+    },
+    {
+        "id": 1726761326155,
+        "description": "Conta de telefone",
+        "type": "saida",
+        "amount": 60,
+        "date": "2024-05-10"
+    },
+    {
+        "id": 1726761326156,
+        "description": "Jantar em restaurante",
+        "type": "saida",
+        "amount": 100,
+        "date": "2024-05-15"
+    },
+    {
+        "id": 1726761326157,
+        "description": "Trabalho freelance",
+        "type": "entrada",
+        "amount": 450,
+        "date": "2024-05-20"
+    },
+    {
+        "id": 1726761326158,
+        "description": "Compra mercado",
+        "type": "saida",
+        "amount": 180,
+        "date": "2024-05-25"
+    },
+    {
+        "id": 1726761326159,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-06-05"
+    },
+    {
+        "id": 1726761326160,
+        "description": "Assinatura de revista",
+        "type": "saida",
+        "amount": 30,
+        "date": "2024-06-10"
+    },
+    {
+        "id": 1726761326161,
+        "description": "Compra de presente",
+        "type": "saida",
+        "amount": 200,
+        "date": "2024-06-15"
+    },
+    {
+        "id": 1726761326162,
+        "description": "Venda de produtos",
+        "type": "entrada",
+        "amount": 700,
+        "date": "2024-06-20"
+    },
+    {
+        "id": 1726761326163,
+        "description": "Taxa de banco",
+        "type": "saida",
+        "amount": 25,
+        "date": "2024-06-25"
+    },
+    {
+        "id": 1726761326164,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-07-05"
+    },
+    {
+        "id": 1726761326165,
+        "description": "Despesas médicas",
+        "type": "saida",
+        "amount": 300,
+        "date": "2024-07-10"
+    },
+    {
+        "id": 1726761326166,
+        "description": "Compra no shopping",
+        "type": "saida",
+        "amount": 400,
+        "date": "2024-07-15"
+    },
+    {
+        "id": 1726761326167,
+        "description": "Freelance extra",
+        "type": "entrada",
+        "amount": 600,
+        "date": "2024-07-20"
+    },
+    {
+        "id": 1726761326168,
+        "description": "Aluguel de carro",
+        "type": "saida",
+        "amount": 200,
+        "date": "2024-07-25"
+    },
+    {
+        "id": 1726761326169,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-08-05"
+    },
+    {
+        "id": 1726761326170,
+        "description": "Compra supermercado",
+        "type": "saida",
+        "amount": 220,
+        "date": "2024-08-10"
+    },
+    {
+        "id": 1726761326171,
+        "description": "Curso de culinária",
+        "type": "saida",
+        "amount": 150,
+        "date": "2024-08-15"
+    },
+    {
+        "id": 1726761326172,
+        "description": "Venda de livros usados",
+        "type": "entrada",
+        "amount": 250,
+        "date": "2024-08-20"
+    },
+    {
+        "id": 1726761326173,
+        "description": "Manutenção de computador",
+        "type": "saida",
+        "amount": 180,
+        "date": "2024-08-25"
+    },
+    {
+        "id": 1726761326174,
+        "description": "Salário",
+        "type": "entrada",
+        "amount": 5000,
+        "date": "2024-09-05"
+    },
+    {
+        "id": 1726761326175,
+        "description": "Jantar fora",
+        "type": "saida",
+        "amount": 90,
+        "date": "2024-09-10"
+    },
+    {
+        "id": 1726761326176,
+        "description": "Conta de água",
+        "type": "saida",
+        "amount": 50,
+        "date": "2024-09-15"
+    },
+    {
+        "id": 1726761326177,
+        "description": "Freelance de design",
+        "type": "entrada",
+        "amount": 500,
+        "date": "2024-09-20"
+    },
+    {
+        "id": 1726761326178,
+        "description": "Assinatura de streaming",
+        "type": "saida",
+        "amount": 30,
+        "date": "2024-09-25"
+    }
+]

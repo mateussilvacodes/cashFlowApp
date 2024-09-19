@@ -1,0 +1,78 @@
+<h2>Transações</h2>
+
+<div class="add-transaction-desktop">
+  <input [(ngModel)]="transaction.description" type="text" maxlength="50" placeholder="Descrição">
+
+  <input [(ngModel)]="transaction.amount" type="number" max="9999999999999" placeholder="Valor">
+
+  <select [(ngModel)]="transaction.type" name="transaction-type">
+    <option value="entrada">Entrada</option>
+    <option value="saida">Saída</option>
+  </select>
+
+  <button (click)="addTransaction()">Adicionar</button>
+
+</div>
+
+  <ul class="transactions">
+    <li class="slideable-item" *ngFor="let transaction of transactions">
+      <div class="content">
+        <span class="transaction-info">
+          <span class="transaction-type" [ngClass]="{'expense': transaction.type === 'saida', 'income': transaction.type === 'entrada'}">
+            <svg *ngIf="transaction.type === 'saida'" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 7L7 17M7 17H16M7 17V8" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg *ngIf="transaction.type === 'entrada'" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#008000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="transaction-description">{{ transaction.description }}</span>
+        </span>
+        <span class="amount" [ngClass]="{'expense': transaction.type === 'saida', 'income': transaction.type === 'entrada'}">
+          {{ (transaction.type === 'entrada' ? '+' : '-') + (transaction.amount | currency:'BRL') }}
+        </span>
+      </div>
+      <div class="actions">
+        <button (click)="editTransaction(transaction.id)">
+          <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path fill="#0000ff" fill-rule="evenodd" d="M15.198 3.52a1.612 1.612 0 012.223 2.336L6.346 16.421l-2.854.375 1.17-3.272L15.197 3.521zm3.725-1.322a3.612 3.612 0 00-5.102-.128L3.11 12.238a1 1 0 00-.253.388l-1.8 5.037a1 1 0 001.072 1.328l4.8-.63a1 1 0 00.56-.267L18.8 7.304a3.612 3.612 0 00.122-5.106zM12 17a1 1 0 100 2h6a1 1 0 100-2h-6z"/>
+          </svg>
+        </button>
+        <button (click)="deleteTransaction(transaction.id)">
+          <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20L18.4199 20.2209C18.3074 21.2337 17.4512 22 16.4321 22H7.56786C6.54876 22 5.69264 21.2337 5.5801 20.2209L4 6Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.34491 3.14716C7.67506 2.44685 8.37973 2 9.15396 2H14.846C15.6203 2 16.3249 2.44685 16.6551 3.14716L18 6H6L7.34491 3.14716Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 6H22" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 11V16" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11V16" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+      </div>
+    </li>
+  </ul>
+
+<div class="add-transaction-mobile">
+  <button (click)="switchBottomSheet()">Adicionar transação</button>
+</div>
+
+<div class="add-transaction-overlay">
+  <div class="bottom-sheet">
+    <h2>Nova transação</h2>
+    <br>
+
+    <label for="description">Descrição</label>
+    <input id="description" [(ngModel)]="transaction.description" type="text" maxlength="50" placeholder="Descrição">
+
+    <label for="amount">Valor</label>
+    <input id="amount" [(ngModel)]="transaction.amount" type="number" max="9999999999999" placeholder="Valor">
+
+    <label for="transaction-type">Tipo da transação</label>
+    <select name="transaction-type" id="transaction-type" [(ngModel)]="transaction.type" name="transaction-type">
+      <option value="entrada">Entrada</option>
+      <option value="saida">Saida</option>
+    </select>
+
+    <button (click)="addTransaction()">Adicionar</button>
+    <button (click)="switchBottomSheet()" class="close-button">Fechar</button>
+  </div>
+</div>

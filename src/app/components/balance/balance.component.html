@@ -1,0 +1,13 @@
+<div class="account-balance">
+  <h2>Saldo</h2>
+  <br>
+  <h1>R${{balance.saldo | number:'1.2-2'}}</h1>
+  <br>
+  <h4>
+    <span class="income">+ R${{balance.totalEntrada | number:'1.2-2'}}</span> | 
+    <span class="expense">- R${{balance.totalSaida | number:'1.2-2'}}</span>
+  </h4>
+  <br>
+  <br>
+  <span class="tag" *ngIf="dolarPrice">Dólar hoje: R${{dolarPrice}}</span>
+</div>
